@@ -1,9 +1,9 @@
-1. D3.js hw
-2. three.js hw
-3. medrt project
-4. game design - home means
-5. network
-6. cave2 simulator
+1. D3.js hw - done
+2. three.js hw - done
+3. medrt project - done
+4. game design - home means - done
+5. network - done
+6. cave2 simulator - done
 7. hci - final project
 8. big data vis - asgn 1
 9. big data vis - asgn 2
