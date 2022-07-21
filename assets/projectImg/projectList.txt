@@ -4,7 +4,7 @@
 4. game design - home means - done
 5. network - done
 6. cave2 simulator - done
-7. hci - final project
+7. hci - final project - done
 8. big data vis - asgn 1
 9. big data vis - asgn 2
 10. big data vis - final project
