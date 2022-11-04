@@ -13,6 +13,9 @@
 13. graphics - as2
 14. graphics - as3
 15. graphics - as4
-16. smarter
-17. hnc-predictor
-18. contrails
+16. smarter - done
+17. hnc-predictor - done
+18. contrails - done
+19. cs 424 project 1
+20. cs 424 project 2
+21 cs 424 prokect 3
