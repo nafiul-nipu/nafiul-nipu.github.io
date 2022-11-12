@@ -9,7 +9,6 @@
 9. big data vis - asgn 2 - done
 10. big data vis - final project
 11. graphics - as0
-12. graphics - as1
 13. graphics - as2
 14. graphics - as3
 15. graphics - as4
