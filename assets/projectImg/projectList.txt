@@ -8,9 +8,9 @@
 8. big data vis - asgn 1 - done
 9. big data vis - asgn 2 - done
 10. big data vis - final project
-11. graphics - as0
-12. graphics - as2
-13. graphics - as3
+11. graphics - as0 - done
+12. graphics - as2 - dine
+13. graphics - as3 - done
 14. smarter - done
 15. hnc-predictor - done
 16. contrails - done
