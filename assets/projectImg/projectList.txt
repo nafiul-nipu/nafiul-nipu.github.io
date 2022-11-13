@@ -9,12 +9,11 @@
 9. big data vis - asgn 2 - done
 10. big data vis - final project
 11. graphics - as0
-13. graphics - as2
-14. graphics - as3
-15. graphics - as4
-16. smarter - done
-17. hnc-predictor - done
-18. contrails - done
-19. cs 424 project 1
-20. cs 424 project 2
-21 cs 424 prokect 3
+12. graphics - as2
+13. graphics - as3
+14. smarter - done
+15. hnc-predictor - done
+16. contrails - done
+17. cs 424 project 1
+28. cs 424 project 2
+19. cs 424 prokect 3
