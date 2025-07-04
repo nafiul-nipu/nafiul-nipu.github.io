@@ -140,7 +140,6 @@
 
     <!-- custom js to load all html files into single page -->
     <script>
-      // 1) Define your sections here
       const sections = [
         "about",
         "experience",
@@ -154,22 +153,41 @@
       const container = document.getElementById("main-content");
 
       sections.forEach((name) => {
-        // 2) Create a placeholder div
         const sectionDiv = document.createElement("div");
         sectionDiv.id = name;
-
-        // 3) Optionally add a class or wrapper tag if your partials expect it
-        //    e.g. sectionDiv.classList.add('resume-section-container');
-
         container.appendChild(sectionDiv);
 
-        // 4) Fetch the partial and dump it in
         fetch(`/_partials/${name}.html`)
           .then((res) => {
             if (!res.ok) throw new Error(`Failed to load ${name}.html`);
             return res.text();
           })
-          .then((html) => (sectionDiv.innerHTML = html))
+          .then((html) => {
+            sectionDiv.innerHTML = html;
+
+            // ⏬ Inject portfolio sub-parts only after portfolio.html is inserted
+            if (name === "portfolio") {
+              ["portfolio-research", "portfolio-other"].forEach((subname) => {
+                fetch(`/_partials/${subname}.html`)
+                  .then((res) => {
+                    if (!res.ok)
+                      throw new Error(`Failed to load ${subname}.html`);
+                    return res.text();
+                  })
+                  .then((subhtml) => {
+                    const target = document.getElementById(subname);
+                    if (!target) {
+                      console.error(
+                        `⚠️ Element with id="${subname}" not found in portfolio.html`
+                      );
+                    } else {
+                      target.innerHTML = subhtml;
+                    }
+                  })
+                  .catch(console.error);
+              });
+            }
+          })
           .catch(console.error);
       });
     </script>
