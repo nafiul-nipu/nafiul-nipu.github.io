@@ -157,7 +157,7 @@
         sectionDiv.id = name;
         container.appendChild(sectionDiv);
 
-        fetch(`/_partials/${name}.html`)
+        fetch(`/partials/${name}.html`)
           .then((res) => {
             if (!res.ok) throw new Error(`Failed to load ${name}.html`);
             return res.text();
@@ -168,7 +168,7 @@
             // ⏬ Inject portfolio sub-parts only after portfolio.html is inserted
             if (name === "portfolio") {
               ["portfolio-research", "portfolio-other"].forEach((subname) => {
-                fetch(`/_partials/${subname}.html`)
+                fetch(`/partials/${subname}.html`)
                   .then((res) => {
                     if (!res.ok)
                       throw new Error(`Failed to load ${subname}.html`);
