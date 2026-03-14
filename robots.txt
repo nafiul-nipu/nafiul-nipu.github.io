@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nafiul-nipu.github.io/sitemap.xml
