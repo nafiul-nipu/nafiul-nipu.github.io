@@ -4,6 +4,7 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 BUILD_SCRIPT="$ROOT_DIR/scripts/build-index.sh"
+RELOAD_FILE="$ROOT_DIR/.dev-reload.json"
 WATCH_DIRS=(
   "$ROOT_DIR/partials"
   "$ROOT_DIR/css"
@@ -16,6 +17,7 @@ POLL_INTERVAL="${POLL_INTERVAL:-1}"
 
 build_site() {
   bash "$BUILD_SCRIPT"
+  printf '{ "updatedAt": "%s" }\n' "$(date '+%Y-%m-%dT%H:%M:%S%z')" > "$RELOAD_FILE"
   printf '[dev] rebuilt index.html at %s\n' "$(date '+%H:%M:%S')"
 }
 
