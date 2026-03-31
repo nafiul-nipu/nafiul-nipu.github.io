@@ -1,39 +1,222 @@
+/* ============================================================
+   Project card image hover overlay
+   ============================================================ */
 .imgContainer {
-    position: relative;
-    /* width: 50%; */
-  }
-  
-  #theImage {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    /* transition: .5s ease; */
-    backface-visibility: hidden;
-  }
-  
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .imgContainer:hover #theImage {
-    opacity: 0.3;
-  }
-  
-  .imgContainer:hover .middle {
-    opacity: 1;
-  }
-  
-  .theText {
-    /* background-color: #04AA6D; */
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-  }
+  position: relative;
+}
+
+#theImage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imgContainer:hover #theImage {
+  opacity: 0.3;
+}
+
+.imgContainer:hover .middle {
+  opacity: 1;
+}
+
+.theText {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* ============================================================
+   Professional color override — deep navy replaces orange
+   ============================================================ */
+.bg-primary,
+nav.navbar.bg-primary {
+  background-color: #1e3a5f !important;
+}
+
+.text-primary {
+  color: #1e3a5f !important;
+}
+
+a {
+  color: #1e3a5f;
+}
+
+a:hover {
+  color: #2e5f9e;
+}
+
+.btn-primary {
+  background-color: #1e3a5f;
+  border-color: #1e3a5f;
+}
+
+.btn-primary:hover {
+  background-color: #16304f;
+  border-color: #16304f;
+}
+
+/* Social icon hover */
+.social-icon:hover {
+  background-color: #2e5f9e !important;
+}
+
+/* Subheading color */
+.subheading {
+  color: #1e3a5f;
+}
+
+/* ============================================================
+   Stats bar — about section
+   ============================================================ */
+.stats-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem;
+  background: #f4f7fb;
+  border-left: 4px solid #1e3a5f;
+  border-radius: 4px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.stat-number {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a5f;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+/* ============================================================
+   Selected publications — about section
+   ============================================================ */
+.selected-pubs {
+  padding: 1rem 1.25rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+.selected-pubs-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.selected-pubs-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.selected-pubs-list li:last-child {
+  border-bottom: none;
+}
+
+.pub-venue-badge {
+  display: inline-block;
+  background: #1e3a5f;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.pub-featured-label {
+  display: inline-block;
+  background: #ffc107;
+  color: #212529;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.pub-pdf-link {
+  font-size: 0.75rem;
+  margin-left: 0.4rem;
+  color: #1e3a5f;
+}
+
+/* ============================================================
+   Project card publication badges
+   ============================================================ */
+.project-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.project-badges .badge {
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  padding: 0.3em 0.55em;
+}
+
+.badge-primary {
+  background-color: #1e3a5f !important;
+}
+
+/* ============================================================
+   Misc polish
+   ============================================================ */
+
+/* Card consistent height */
+.card {
+  width: 100%;
+}
+
+/* Tighten up card body font */
+.card-body .card-text {
+  font-size: 0.88rem;
+}
+
+/* Course projects toggle button */
+#portfolio-other-collapse + div,
+[data-target="#portfolio-other-collapse"] {
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
