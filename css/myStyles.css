@@ -198,6 +198,11 @@ a:hover {
 /* ============================================================
    Skill tags — expertise section
    ============================================================ */
+/* Stack label spacing in project cards */
+.card-stack {
+  margin-top: 0.6rem;
+}
+
 .skill-tags {
   display: flex;
   flex-wrap: wrap;

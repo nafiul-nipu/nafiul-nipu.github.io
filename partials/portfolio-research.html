@@ -1,5 +1,205 @@
 <div class="subheading mb-4">Research Projects</div>
 <div class="row">
+  <!-- MPASE Interface - LANL Internship 2024 -->
+  <div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card">
+      <div class="imgContainer">
+        <img
+          src="./assets/projectImg/genome-interface.png"
+          class="card-img-top"
+          alt="MPASE Interactive Interface"
+        />
+        <div class="middle">
+          <div class="theText">
+            <a
+              href="https://github.com/nafiul-nipu/GenomeVisProject"
+              target="_blank"
+              class="btn btn-secondary"
+              >Github</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="project-badges mb-2">
+          <span class="badge badge-secondary">Ongoing Research</span>
+        </div>
+        <h5 class="card-title">MPASE Interactive Genome Browser</h5>
+        <p class="card-text">
+          Visual analytics tool for comparative analysis of reconstructed 3D genome structures
+          from Hi-C data, integrating spatial organization with gene expression and chromatin
+          accessibility. Aligns 27 Hi-C chromatin structures (uninfected and virally infected
+          conditions at 12, 18, and 24hrs) via PCA and ICP into a shared coordinate frame.
+          Three coordinated views: 3D genome structure panel for side-by-side comparison across
+          conditions, shape analysis panel with HDR and point-fraction (PF) shape abstractions
+          across XY/YZ/XZ projections, and a temporal dynamics panel linking gene expression
+          and accessibility changes over time. Evaluated with 8 participants (SUS 88.44).
+          </p>
+          <p class="card-stack mb-0"><strong>Stack:</strong> TypeScript, React, Redux, Web Workers, D3.js, Three.js, WebGL, Python, NumPy, scikit-learn
+        </p>
+        <a
+          href="https://nafiul-nipu.github.io/GenomeVisProject/"
+          class="btn btn-secondary"
+          target="_blank"
+          >Demo</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- MPASE Toolkit -->
+  <div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card">
+      <div class="imgContainer">
+        <img
+          src="./assets/projectImg/mpase.png"
+          class="card-img-top"
+          alt="MPASE Computational Toolkit"
+        />
+        <div class="middle">
+          <div class="theText">
+            <a
+              href="https://github.com/nafiul-nipu/MPASE/tree/main"
+              target="_blank"
+              class="btn btn-secondary"
+              >Github</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="project-badges mb-2">
+          <span class="badge badge-secondary">Ongoing Research</span>
+        </div>
+        <h5 class="card-title">MPASE Python Toolkit</h5>
+        <p class="card-text">
+          Python package (Multi-Point Alignment and Shape Extraction) for quantitative structural
+          analysis of 3D genome point clouds. Implements a three-stage alignment pipeline:
+          centroid normalization, PCA-based pre-alignment, and trimmed ICP refinement into a
+          shared coordinate frame. Provides two complementary shape abstractions: HDR (bootstrap
+          aggregation + Gaussian KDE + mass thresholds) and point-fraction (KDE scoring +
+          rasterization + morphological cleanup) across XY/YZ/XZ projections. Includes
+          quantitative comparison metrics: IoU, Hausdorff distance, and mean boundary distance,
+          with multi-scale representations at multiple abstraction levels.
+          </p>
+          <p class="card-stack mb-0"><strong>Stack:</strong> Python, NumPy, scikit-learn, PCA, ICP, HDR Modeling, Statistical Metrics
+        </p>
+        <a
+          href="https://github.com/nafiul-nipu/MPASE/tree/main/examples"
+          class="btn btn-secondary"
+          target="_blank"
+          >Examples</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- Neurosurgery Epilepsy -->
+  <div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card">
+      <div class="imgContainer">
+        <img
+          src="./assets/projectImg/epilepsy.png"
+          class="card-img-top"
+          alt="Neurosurgery Epilepsy Pattern Analysis"
+        />
+        <div class="middle">
+          <div class="theText">
+            <a
+              href="https://github.com/nafiul-nipu/brain-epilepsy-interface-react"
+              target="_blank"
+              class="btn btn-secondary"
+              >Github</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="project-badges mb-2">
+          <span class="badge badge-primary">Computer Graphics Forum 2026</span>
+        </div>
+        <h5 class="card-title">Neurosurgery Network Pattern Analysis</h5>
+        <p class="card-text">
+          Visual computing framework for analyzing epilepsy EEG ensemble data to support
+          neurosurgical planning. Introduces a dynamic community detection algorithm (modified
+          Louvain) and social network abstraction to extract conserved electrode spike
+          propagation patterns across 2-5 recorded sessions (70-120 electrodes per patient).
+          Four coordinated views: 3D brain network with patient-specific anatomy and electrode
+          communities, 2D patch network for within/across-patch propagation, EEG panel with
+          duckDB for fast loading of &gt;1GB per-session files, and a patch summary encoding
+          spike frequency, onset, and spread. Evaluated with 10 neurologists and surgeons
+          across 4 medical centers (SUS 90.0).
+          </p>
+          <p class="card-stack mb-0"><strong>Stack:</strong> HTML, CSS, JS, React, D3.js, Three.js, Python, Flask, duckDB, RESTful API Design
+        </p>
+        <a
+          href="https://github.com/nafiul-nipu/brain-epilepsy-interface-react"
+          class="btn btn-secondary"
+          target="_blank"
+          >Github</a
+        >
+        <a
+          href="https://www.evl.uic.edu/documents/nafiul_cgf_epilepsy_2nd_gen.pdf"
+          class="btn btn-outline-secondary btn-sm"
+          target="_blank"
+          ><i class="fas fa-file-pdf"></i> Paper</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- mEnergy - IEEE EMBC 2025 -->
+  <div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card">
+      <div class="imgContainer">
+        <img
+          src="./assets/projectImg/mEnergy.png"
+          class="card-img-top"
+          alt="mEnergy Platform"
+        />
+        <div class="middle">
+          <div class="theText">
+            <a
+              href="https://github.com/uic-evl/ApneaSarcopeniaHNC"
+              target="_blank"
+              class="btn btn-secondary"
+              >Github</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="project-badges mb-2">
+          <span class="badge badge-primary">IEEE EMBC 2025</span>
+        </div>
+        <h5 class="card-title">mEnergy: Multi-device mHealth Platform</h5>
+        <p class="card-text">
+          Web-based clinical dashboard for near real-time remote monitoring of metabolic health
+          in head and neck cancer survivors, integrating Fitbit Sense 2 (smartwatch) and
+          Withings Body+ (smart scale) via OAuth 2.0. Four coordinated views: a Demographics
+          and PRO panel, a Body Composition panel tracking sarcopenia risk via Lean/Fat Mass
+          Index (LMI/FMI), a Sleep Analysis panel visualizing SpO2 and heart rate for apnea
+          detection, and an Activity panel for daily activity goals.
+          <a href="https://www.evl.uic.edu/pubs/2910" target="_blank">Project page</a>.
+          </p>
+          <p class="card-stack mb-0"><strong>Stack:</strong> HTML, CSS, JS, React, D3.js, OAuth 2.0 Web APIs
+        </p>
+        <a
+          href="../assets/video-demos/mEnergy.mp4"
+          class="btn btn-secondary"
+          target="_blank"
+          >Demo Video</a
+        >
+        <a
+          href="https://www.evl.uic.edu/documents/menergy.pdf"
+          class="btn btn-outline-secondary btn-sm"
+          target="_blank"
+          ><i class="fas fa-file-pdf"></i> Paper</a
+        >
+      </div>
+    </div>
+  </div>
+
   <!-- Contrails - most prestigious, IEEE VIS 2022 + IEEE Magazine -->
   <div class="col-lg-6 mb-3 d-flex align-items-stretch">
     <div class="card">
@@ -27,13 +227,17 @@
         </div>
         <h5 class="card-title">Contrail Visual Analysis &amp; Detection</h5>
         <p class="card-text">
-          Visual computing framework for analyzing contrail formation in aircraft engine simulations,
-          combining volume rendering, ensemble visualization, and novel ML-based shape detection
-          algorithms. Published at <strong>IEEE VIS 2022</strong> and featured in
+          Visual computing framework for analyzing contrail ensemble data from multiple HPC aircraft
+          engine simulations (&gt;100 GiB). The back-end leverages a contrail-formation criterion,
+          novel geometric shape detection via the &alpha;-shape algorithm, and DBSCAN clustering to
+          detect and track contrail structures over time. The front-end provides four coordinated views:
+          I/O parameter exploration via custom colored-tile glyphs, 3D volume rendering via WebGL ray
+          casting, a contrail evolution tracking graph, and a shape similarity view with Kiviat diagrams.
+          Evaluated with domain experts. Published at <strong>IEEE VIS 2022</strong> and featured in
           <a href="https://ieeexplore.ieee.org/abstract/document/10231022" target="_blank">IEEE Computing Edge Magazine</a>
           and <a href="https://cs.uic.edu/news-stories/doctoral-student-featured-in-ieee-computing-edge/" target="_blank">UIC Newsletter</a>.
-          <br />
-          <strong>Stack:</strong> React.js, D3.js, WebGL, Python, Flask
+          </p>
+          <p class="card-stack mb-0"><strong>Stack:</strong> Python, pandas, scikit-learn, Flask, NumPy, HTML, CSS, JS, D3.js, WebGL
         </p>
         <a
           href="https://nafiul-nipu.github.io/Contrails/"
@@ -77,12 +281,16 @@
         </div>
         <h5 class="card-title">HNC-PREDICTOR</h5>
         <p class="card-text">
-          Clinic-ready web tool for risk stratification in head and neck cancer radiotherapy,
-          validated across multiple international institutions (UIC &amp; MD Anderson Cancer Center).
-          Enables oncologists to assess tumor control and toxicity risk through interactive
-          multi-variable exploration.
-          <br />
-          <strong>Stack:</strong> React, D3.js, Python, Flask, R
+          Three-view clinical decision-support dashboard for head and neck cancer radiotherapy
+          outcome prediction: an Input Variables Panel with automated AJCC-8th stage detection,
+          a 10-year Outcome Prediction View using Cox regression models for overall survival,
+          local control, and regional control, and a Model-based Cohort Stratification View
+          for high/low risk group comparison. Trained and validated on 4,611 patients from
+          three international centers (MDACC, UMCG, PMH). Publicly deployed at
+          risk-calculator.evl.uic.edu; evaluated with clinicians across multiple countries
+          (SUS score 87.81, excellent usability).
+          </p>
+          <p class="card-stack mb-0"><strong>Stack:</strong> HTML, CSS, JS, React, D3.js, Python, Flask, R, NumPy, RESTful API Design
         </p>
         <a
           href="https://uic-evl.github.io/hnc-predictor/"
@@ -90,190 +298,17 @@
           target="_blank"
           >Demo</a
         >
-      </div>
-    </div>
-  </div>
-
-  <!-- mEnergy - IEEE EMBC 2025 -->
-  <div class="col-lg-6 mb-3 d-flex align-items-stretch">
-    <div class="card">
-      <div class="imgContainer">
-        <img
-          src="./assets/projectImg/mEnergy.png"
-          class="card-img-top"
-          alt="mEnergy Platform"
-        />
-        <div class="middle">
-          <div class="theText">
-            <a
-              href="https://github.com/uic-evl/ApneaSarcopeniaHNC"
-              target="_blank"
-              class="btn btn-secondary"
-              >Github</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="project-badges mb-2">
-          <span class="badge badge-primary">IEEE EMBC 2025</span>
-        </div>
-        <h5 class="card-title">mEnergy — mHealth Wearable Platform</h5>
-        <p class="card-text">
-          Multi-device mHealth platform for real-time remote monitoring of metabolic health
-          in head and neck cancer patients, integrating Fitbit smartwatch and Withings smart
-          scale data streams into an interactive clinical dashboard for early detection of
-          cachexia, sarcopenia, and sleep apnea.
-          <a href="https://www.evl.uic.edu/pubs/2910" target="_blank">Project page</a>.
-          <br />
-          <strong>Stack:</strong> React.js, D3.js, REST APIs, HTML/CSS/JS
-        </p>
         <a
-          href="../assets/video-demos/mEnergy.mp4"
-          class="btn btn-secondary"
-          target="_blank"
-          >Demo Video</a
-        >
-        <a
-          href="https://www.evl.uic.edu/documents/menergy.pdf"
+          href="https://www.evl.uic.edu/documents/nafiul_hn_predictor_vahc.pdf"
           class="btn btn-outline-secondary btn-sm"
           target="_blank"
-          ><i class="fas fa-file-pdf"></i> Paper</a
-        >
-      </div>
-    </div>
-  </div>
-
-  <!-- MPASE Interface - LANL Internship 2024 -->
-  <div class="col-lg-6 mb-3 d-flex align-items-stretch">
-    <div class="card">
-      <div class="imgContainer">
-        <img
-          src="./assets/projectImg/genome-interface.png"
-          class="card-img-top"
-          alt="MPASE Interactive Interface"
-        />
-        <div class="middle">
-          <div class="theText">
-            <a
-              href="https://github.com/nafiul-nipu/GenomeVisProject"
-              target="_blank"
-              class="btn btn-secondary"
-              >Github</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="project-badges mb-2">
-          <span class="badge badge-secondary">Ongoing Research</span>
-        </div>
-        <h5 class="card-title">MPASE Interactive Genome Browser</h5>
-        <p class="card-text">
-          Interactive multi-view visualization system for comparative analysis of reconstructed
-          3D genome structures, supporting synchronized 3D/2D exploration of structural
-          changes across experimental conditions and timepoints. Developed during internship
-          at <strong>Los Alamos National Laboratory</strong>.
-          <br />
-          <strong>Stack:</strong> React.js, Redux, D3.js, Three.js, WebGL, Web Workers
-        </p>
-        <a
-          href="https://nafiul-nipu.github.io/GenomeVisProject/"
-          class="btn btn-secondary"
-          target="_blank"
-          >Demo</a
-        >
-      </div>
-    </div>
-  </div>
-
-  <!-- MPASE Toolkit -->
-  <div class="col-lg-6 mb-3 d-flex align-items-stretch">
-    <div class="card">
-      <div class="imgContainer">
-        <img
-          src="./assets/projectImg/mpase.png"
-          class="card-img-top"
-          alt="MPASE Computational Toolkit"
-        />
-        <div class="middle">
-          <div class="theText">
-            <a
-              href="https://github.com/nafiul-nipu/MPASE/tree/main"
-              target="_blank"
-              class="btn btn-secondary"
-              >Github</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="project-badges mb-2">
-          <span class="badge badge-secondary">Ongoing Research</span>
-        </div>
-        <h5 class="card-title">MPASE Python Toolkit</h5>
-        <p class="card-text">
-          Modular Python library for quantitative structural analysis of 3D genome point clouds,
-          including alignment (ICP), highest-density region (HDR) extraction, point-fraction
-          modeling, and statistical comparison metrics. Built to support genomics researchers
-          at <strong>Los Alamos National Laboratory</strong>.
-          <br />
-          <strong>Stack:</strong> Python, NumPy, PCA, ICP, HDR Modeling
-        </p>
-        <a
-          href="https://github.com/nafiul-nipu/MPASE/tree/main/examples"
-          class="btn btn-secondary"
-          target="_blank"
-          >Examples</a
-        >
-      </div>
-    </div>
-  </div>
-
-  <!-- Neurosurgery Epilepsy -->
-  <div class="col-lg-6 mb-3 d-flex align-items-stretch">
-    <div class="card">
-      <div class="imgContainer">
-        <img
-          src="./assets/projectImg/epilepsy.png"
-          class="card-img-top"
-          alt="Neurosurgery Epilepsy Pattern Analysis"
-        />
-        <div class="middle">
-          <div class="theText">
-            <a
-              href="https://github.com/nafiul-nipu/brain-epilepsy-interface-react"
-              target="_blank"
-              class="btn btn-secondary"
-              >Github</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="project-badges mb-2">
-          <span class="badge badge-primary">Computer Graphics Forum 2026</span>
-        </div>
-        <h5 class="card-title">Neurosurgery Network Pattern Analysis</h5>
-        <p class="card-text">
-          Visual computing system for neurosurgery teams to explore spatiotemporal epilepsy
-          ensemble data — mapping electrode recordings onto 3D brain surface models, encoding
-          spike propagation and seizure onset patterns, and integrating tumor geometry to
-          support surgical planning.
-          <br />
-          <strong>Stack:</strong> React.js, D3.js, Three.js, Python
-        </p>
-        <a
-          href="https://github.com/nafiul-nipu/brain-epilepsy-interface-react"
-          class="btn btn-secondary"
-          target="_blank"
-          >Github</a
+          ><i class="fas fa-file-pdf"></i> VAHC 2025</a
         >
         <a
-          href="https://www.evl.uic.edu/documents/nafiul_cgf_epilepsy_2nd_gen.pdf"
+          href="https://www.sciencedirect.com/science/article/pii/S095980492200805X"
           class="btn btn-outline-secondary btn-sm"
           target="_blank"
-          ><i class="fas fa-file-pdf"></i> Paper</a
+          ><i class="fas fa-file-pdf"></i> Eur. J. Cancer 2022</a
         >
       </div>
     </div>
@@ -306,8 +341,8 @@
           treatment similarity and survival trends, supporting precision therapy selection
           through interactive multi-dimensional patient comparison.
           <a href="https://www.evl.uic.edu/research/2333" target="_blank">Project page</a>.
-          <br />
-          <strong>Stack:</strong> HTML/CSS/JS, D3.js, Python, Flask, R
+          </p>
+          <p class="card-stack mb-0"><strong>Stack:</strong> HTML, CSS, JS, D3.js, Python, Flask, R, RESTful API Design
         </p>
         <a
           href="https://nafiul-nipu.github.io/SMARTER/"
