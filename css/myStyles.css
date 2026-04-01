@@ -43,39 +43,39 @@
    ============================================================ */
 .bg-primary,
 nav.navbar.bg-primary {
-  background-color: #1e3a5f !important;
+  background-color: #2c3e50 !important;
 }
 
 .text-primary {
-  color: #1e3a5f !important;
+  color: #2c3e50 !important;
 }
 
 a {
-  color: #1e3a5f;
+  color: #2c3e50;
 }
 
 a:hover {
-  color: #2e5f9e;
+  color: #3d5166;
 }
 
 .btn-primary {
-  background-color: #1e3a5f;
-  border-color: #1e3a5f;
+  background-color: #2c3e50;
+  border-color: #2c3e50;
 }
 
 .btn-primary:hover {
-  background-color: #16304f;
-  border-color: #16304f;
+  background-color: #1a2d3d;
+  border-color: #1a2d3d;
 }
 
 /* Social icon hover */
 .social-icon:hover {
-  background-color: #2e5f9e !important;
+  background-color: #3d5166 !important;
 }
 
 /* Subheading color */
 .subheading {
-  color: #1e3a5f;
+  color: #2c3e50;
 }
 
 /* ============================================================
@@ -86,8 +86,8 @@ a:hover {
   flex-wrap: wrap;
   gap: 1.25rem;
   padding: 1rem 1.25rem;
-  background: #f4f7fb;
-  border-left: 4px solid #1e3a5f;
+  background: #f4f5f6;
+  border-left: 4px solid #2c3e50;
   border-radius: 4px;
 }
 
@@ -102,7 +102,7 @@ a:hover {
   font-family: 'Saira Extra Condensed', sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #1e3a5f;
+  color: #2c3e50;
   line-height: 1;
 }
 
@@ -144,7 +144,7 @@ a:hover {
 
 .pub-venue-badge {
   display: inline-block;
-  background: #1e3a5f;
+  background: #2c3e50;
   color: #fff;
   font-size: 0.7rem;
   font-weight: 700;
@@ -173,7 +173,7 @@ a:hover {
 .pub-pdf-link {
   font-size: 0.75rem;
   margin-left: 0.4rem;
-  color: #1e3a5f;
+  color: #2c3e50;
 }
 
 /* ============================================================
@@ -192,7 +192,7 @@ a:hover {
 }
 
 .badge-primary {
-  background-color: #1e3a5f !important;
+  background-color: #2c3e50 !important;
 }
 
 /* ============================================================
@@ -211,9 +211,9 @@ a:hover {
 
 .skill-tag {
   display: inline-block;
-  background: #f4f7fb;
-  border: 1px solid #c8d8ec;
-  color: #1e3a5f;
+  background: #f4f5f6;
+  border: 1px solid #c5cdd4;
+  color: #2c3e50;
   font-size: 0.82rem;
   font-weight: 600;
   padding: 0.35rem 0.75rem;
